@@ -3,16 +3,21 @@
  * @param {number} b The second number.
  * @returns {number} The sum of a and b.
  */
+
+
 function sum(a, b) {
-  // TODO: Implement this function.
+    // TODO: Implement this function.
+ return a+b;
 }
 
 /**
  * @param {string} str The string to reverse.
  * @returns {string} The reversed string.
  */
+
 function reverseString(str) {
   // TODO: Implement this function.
+  return str.split("").reverse().join("");
 }
 
 /**
@@ -21,6 +26,12 @@ function reverseString(str) {
  */
 function findLargest(numbers) {
   // TODO: Implement this function.
+  if (numbers.length === 0){
+    return null;
+  }
+  else{
+    return Math.max(...numbers);
+  }
 }
 
 /**
@@ -31,6 +42,13 @@ function findLargest(numbers) {
  */
 function isPalindrome(str) {
   // TODO: Implement this function.
+  const low=str.toLowerCase();
+  if (low === low.split("").reverse().join("")){
+    return true;
+  }
+  else{
+    return false;
+  }
 }
 
 /**
@@ -39,6 +57,7 @@ function isPalindrome(str) {
  */
 function filterEvenNumbers(numbers) {
   // TODO: Implement this function.
+ return numbers.filter(n => n % 2 === 0);
 }
 
 
